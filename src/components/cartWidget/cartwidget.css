@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+.cartwidget{
+  display: inline-flex;
+}
+
+.carrito{
+  width: 2rem;
+  color: aliceblue;
+}
+.iconCarrito{
+  width: 30px;
+}
+.total{
+  font-family: 'Reggae One', cursive;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  border-radius: .3rem;
+  width: 40px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 400px){
+  .cartwidget {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+  }
+}
