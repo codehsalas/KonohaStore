@@ -9,8 +9,6 @@ import Navbar from './components/navbar/Navbar'
 import Home from './views/home/Home'
 import Cart from './views/cart/Cart'
 
-
-
 function App() {
   return (
   <CartProvider>
@@ -21,7 +19,7 @@ function App() {
           <Route path="/" exact component={Home}></Route>
           <Route path="/products" component={ItemListContainer}></Route>
           <Route
-            path="/category/:categoryId"
+            path="/category/:id"
             component={ItemListContainer}
           ></Route>
           <Route path="/item/:id" component={ItemDetailContainer}></Route>

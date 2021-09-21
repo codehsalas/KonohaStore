@@ -28,33 +28,35 @@ const Navbar = () => {
                   Productos
                 </NavLink>
               </li>
-              <li className="nav-item dropdown text-white">
-                <a
-                className="nav-link dropdown-toggle text-white"
-                href="#" id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
+               <li className="nav-item dropdown">
+                <p
+                  to="/products"
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   Series
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <NavLink to="/products/submenu/naruto" className="dropdown-item">
-                      Dragon Ball
-                    </NavLink>
-                  </li>
-                  <li>
-                     <NavLink to="/submenu/demonslayer" className="dropdown-item">
-                      Demon Slayer
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/submenu/naruto" className="dropdown-item">
-                      Naruto Shippuden
-                    </NavLink>
-                   </li>
-                </ul>
+                </p>
+                <div
+                  className="dropdown-menu text-center style-dropdown"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <NavLink to="/category/naruto" className="dropdown-item">
+                    Naruto
+                  </NavLink>
+                  <NavLink to="/category/demonslayer" className="dropdown-item">
+                    Demon Slayer
+                  </NavLink>
+                  <NavLink to="/category/dragonball" className="dropdown-item">
+                    Dragon Ball Super
+                  </NavLink>
+                </div>
               </li>
+
               <form className="d-flex">
                 <input className="form-control me-2" type="search" aria-label="Search"/>
                 <button className="btn btn-secondary" type="submit">Buscar</button>

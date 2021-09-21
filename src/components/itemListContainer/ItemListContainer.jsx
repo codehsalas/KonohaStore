@@ -24,11 +24,7 @@ const ItemListContainer = ({ greeting }) => {
       //setProducts(dataItems);
 
       categoryId
-      /*
-      ? setProducts(dataItems.filter((e) => e.data().categoria === categoryId))
-      : setProducts(dataItems);
-      */
-        ? setProducts(dataItems.filter((e) => e.data().id === categoryId))
+        ? setProducts(dataItems.filter((e) => e.data().category.id === categoryId))
         : setProducts(dataItems);
     };
     obtenerData();

@@ -9,7 +9,6 @@ const ItemList = ({ products }) => {
       <div className="row row-propiedades">
         {products.map((product) => {
           const item = product.data();
-          console.log('Vista item', item);
           return (
             <div
               key={item.id}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import axios from "axios";
 
 // import firebase
 import { collection, getDocs } from "firebase/firestore";
@@ -20,7 +19,8 @@ const ItemDetailContainer = ({ match }) => {
       //setProducts(data.docs);
 
       const dataItems = data.docs;
-      setProduct(dataItems[ItemId].data());
+      setProduct(dataItems[ItemId - 1].data());
+      //setProduct(dataItems[ItemId -1 ].data());
     };
     obtenerData();
 
