@@ -20,6 +20,7 @@ const ItemDetailContainer = ({ match }) => {
 
       const dataItems = data.docs;
       setProduct(dataItems[ItemId - 1].data());
+      console.log(ItemId);
       //setProduct(dataItems[ItemId -1 ].data());
     };
     obtenerData();
