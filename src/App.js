@@ -8,7 +8,7 @@ import Navbar from './components/navbar/Navbar'
 
 import Home from './views/home/Home'
 import Cart from './views/cart/Cart'
-import Pagar from './views/pagar/Pagar'
+import FormUser from './views/FormUser/FormUser'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           ></Route>
           <Route path="/item/:id" component={ItemDetailContainer}></Route>
           <Route path="/cart" component={Cart}></Route>
-          <Route path="/pagar" component={Pagar}></Route>
+          <Route path="/form" component={FormUser}></Route>
         </Switch>
       </div>
     </Router>

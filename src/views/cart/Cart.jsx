@@ -44,7 +44,7 @@ const Cart = () => {
               <button onClick={clear} className="btn btn-warning button-clear">
                 Limpiar
               </button>
-              <NavLink to="/pagar" className="btn btn-success">
+              <NavLink to="/form" className="btn btn-success">
                 Pagar
               </NavLink>
             </div>
