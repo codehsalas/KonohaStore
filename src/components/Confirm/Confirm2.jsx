@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
+import '../../assets/css/confirm.css';
 
 //firestore
 import { collection, getDocs } from "firebase/firestore";
@@ -7,6 +8,7 @@ import db from "../../firebase/firebaseConfig";
 
 // import
 import { CartContext } from "../../components/CartContext/CartContext";
+
 
 const Confirm2 = ({ orderIdGenerate }) => {
   const [orderComplete, setOrderComplete] = useState({});
@@ -51,7 +53,7 @@ const Confirm2 = ({ orderIdGenerate }) => {
           </div>
         </div>
         <NavLink to="/">
-          <button onClick={clear} className="btn btn-info text-center">
+          <button onClick={clear} className="myButton">
             Volver al Home
           </button>
         </NavLink>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './itemCount.css';
 
 const ItemCount = ({ stock, initial, addItem }) => {
   const [counter, setCounter] = useState(initial);
@@ -29,21 +29,22 @@ const ItemCount = ({ stock, initial, addItem }) => {
   return (
     <div>
       <p>Stock disponible: {stock} unidades</p>
-      <div className="btn-group w-100" role="group" aria-label="Basic example">
-        <button type="button" className="btn btn-secondary" onClick={restItems}>
+
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button type="button" className="myButton" onClick={restItems}>
           -
         </button>
 
-        <p className="mx-5 mt-2">{counter}</p>
+        <p className="counter-item">{counter}</p>
 
-        <button type="button" className="btn btn-secondary" onClick={addItems}>
+        <button type="button" className="myButton" onClick={addItems}>
           +
         </button>
+        <div className="myButton-AddCart" onClick={addProductToCart}>
+          Añadir al carrito
+        </div>
       </div>
 
-      <div className="btn btn-warning mt-3 w-100" onClick={addProductToCart}>
-        Add to Cart
-      </div>
     </div>
   );
 };

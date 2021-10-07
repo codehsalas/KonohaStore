@@ -1,19 +1,31 @@
 import React from "react";
+import './item.css'
+import comprar from '../../assets/img/comprar.svg'
 
 const Item = ({ data }) => {
   return (
-    <div>
-      <div className="view zoom overlay z-depth-2 rounded">
+    <div className="conten-card">
+      <div className="card-item">
         <img
-          className="img-fluid w-50"
+          className="img-fluid w-10"
           src={data.img}
           alt={data.titulo}
         ></img>
-      </div>
 
-      <div className="text-center pt-4 border-bottom1">
-        <h5 className="card-title">{data.titulo}</h5>
-        <h6 className="mb-4 price-text">Precio: ${data.precio}</h6>
+
+      <div className="detail-card">
+        <div>
+          <h5 className="card-title">{data.titulo}</h5>
+
+        <div>
+          <h4>${data.precio}</h4>
+        </div>
+
+        </div>
+        <div>
+          <button><img className="btn-comprar" src={comprar}/></button>
+        </div>
+      </div>
       </div>
     </div>
   );

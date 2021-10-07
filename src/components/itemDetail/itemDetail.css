@@ -1,0 +1,88 @@
+.botones-compra{
+  display: flex;
+  justify-content: left;
+  text-align: -webkit-auto;
+}
+
+.pt-2 {
+    padding-top: .5rem!important;
+    text-align: left !important;
+}
+
+h2{
+  text-align: left;
+  font-weight: bolder;
+}
+
+h5{
+  text-align: left;
+}
+
+h3{
+  font-weight: bolder;
+}
+
+.myButton {
+  box-shadow:inset 0px 1px 0px 0px #cf866c;
+  background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color:#d0451b;
+  border-radius:3px;
+  border:1px solid #942911;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:1rem;
+  font-weight: bolder;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #854629;
+  vertical-align: middle;
+  align-self: center;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color:#bc3315;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.myButton-AddCart {
+  box-shadow:inset 0px 1px 0px 0px #fff6af;
+  background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color:#ffec64;
+  border-radius:6px;
+  border:1px solid #ffaa22;
+  display:inline-block;
+  cursor:pointer;
+  color:#333333;
+  font-family:Arial;
+  font-size:1rem;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffee66;
+  margin-left: 15px;
+  vertical-align: middle;
+  align-self: center;
+}
+.myButton-AddCart:hover {
+  background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color:#ffab23;
+}
+.myButton-AddCart:active {
+  position:relative;
+  top:1px;
+}
+
+.counter-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 50px;
+  font-size: 1rem;
+  font-weight: bolder;
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './itemListContainer.css'
+import catalogo from '../../assets/img/catalogo.jpg'
 
 // import firebase
 import db from "../../firebase/firebaseConfig";
@@ -37,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div className="item-list-container container">
       <div className="row">
-        <h1 className="title-products text-center col-12">Nuestros productos</h1>
+        <h1 className="title-products text-center col-12"><img class="header-catalogo" src={catalogo}/></h1>
 
         {categoryId ? (
           <h2 className="text-center col-12">Categoría: {categoryId}</h2>

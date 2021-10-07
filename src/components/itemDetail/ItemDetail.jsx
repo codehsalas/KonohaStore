@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-// Import itemcount
 import ItemCount from "../itemCount/ItemCount";
 import { CartContext } from "../cartcontext/Cartcontext";
+import './itemDetail.css';
 
 const ItemDetail = ({ data }) => {
   const [addQuantity, setAddQuantity] = useState(null);
@@ -39,14 +39,14 @@ const ItemDetail = ({ data }) => {
             {data.descripcion}
           </p>
           <br></br>
-          <div className="row">
+          <div className="row botones-compra">
             <div className="col-8">
               {/* Se agregó el contador vs botón  */}
               {addQuantity === null ? (
                 <ItemCount stock={10} initial={1} addItem={onAdd} />
               ) : (
                 <NavLink to="/cart">
-                  <button type="button" className="btn btn-warning">
+                  <button type="button" className="myButton-AddCart">
                     Ir al carrito
                   </button>
                 </NavLink>

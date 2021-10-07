@@ -1,0 +1,67 @@
+.conten-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b1ababd2;
+  -webkit-box-shadow: 0px 0px 9px -2px rgba(61,56,61,0.22);
+  -moz-box-shadow: 0px 0px 9px -2px rgba(61,56,61,0.22);
+  box-shadow: 0px 0px 9px -2px rgba(61,56,61,0.22);
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-item button{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+
+}
+.detail-card{
+  display: flex;
+  flex-direction: row;
+  background-color: #d60600;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.btn-comprar{
+  width: 75%;
+}
+
+.card-title{
+font-size: 1.3rem;
+font-weight: bolder;
+}
+.card-price{
+  font-size: 1rem;
+}
+
+.div-price-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h4{
+  font-weight: bolder;
+}
